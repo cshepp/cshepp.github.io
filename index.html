@@ -16,7 +16,7 @@
         <div class="container" style="margin-top: 50px; ">
             <div class="row">
                 <div class="col-xs-6 col-xs-offset-3">
-                    <a style="color: #eeeeee; text-decoration: underline; font-size: 38; font-weight: 200;" href="javascript: $('.hide').removeClass('hide');$('.redacted-overlay').remove();$('.subscription-required').remove();">LancasterOnline Fix</a>
+                    <a style="color: #eeeeee; text-decoration: underline; font-size: 38; font-weight: 200;" href="javascript:jQuery.find('div.subscriber-only.encrypted-content.hide').map(x => {return {e: x, text: x.innerText}}).map(x => {x.e.innerHTML = tncms.unscramble(x.text); x.e.style.display = 'block'; x.e.className = '';});jQuery.find('.redacted-overlay')[0].style.background = '';jQuery.find('.subscription-required')[0].remove();">LancasterOnline Fix</a>
                     <br />
                     <p style="color:#eeeeee; font-style: italic;">click and drag the link above to your bookmarks bar</p>
                 </div>
